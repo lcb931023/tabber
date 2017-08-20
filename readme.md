@@ -24,6 +24,8 @@ Therefore I'm building my own tab software.
     - note that a note might contain varied amount of characters
   - move between notes
     - ctrl + arrow
+  - move between measures
+    - possibly a variation of ctrl + arrow. throw alt key in there?
   - delete whole notes
     - ctrl + delete/backspace
 - play tab

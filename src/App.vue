@@ -1,12 +1,18 @@
 <template>
   <div id="app">
     <h1> Tabber </h1>
+    <tab></tab>
   </div>
 </template>
 
 <script>
+import Tab from './Tab.vue'
+
 export default {
   name: 'app',
+  components: {
+    Tab,
+  },
   data () {
     return {
 
@@ -18,23 +24,9 @@ export default {
 <style lang="scss">
 #app {
   font-family: 'Noto', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  margin-top: 60px;
 }
 
 h1, h2 {
   font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
 }
 </style>
