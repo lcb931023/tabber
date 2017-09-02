@@ -2,7 +2,9 @@
   <div id="tab">
     <div class='tunings'>
       <span class='tuning' v-for='string in strings' :key='string'>{{string}}|</span>
-    </div><measure
+    </div><!-- connecting the two elements, 
+    because new line would cause unwanted space
+ --><measure
       v-for='n in measure'
       :key='n'
       :strings='strings'></measure>
@@ -20,8 +22,11 @@ export default {
   data () {
     return {
       strings: ['E', 'B', 'G', 'D', 'A', 'E'],
-      measure: 7,
+      measure: 8,
     }
+  },
+  methods: {
+
   }
 }
 </script>
